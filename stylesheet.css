@@ -16,10 +16,40 @@ text-align: justify;
 h3{
 text-align: center;
 }
-
+button{
+    float: right;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
 .Number3
 {
-  background-color: #9a1115; 
+  background-color: #949B95; 
   border-radius: 8px;
   
+}
+.Number3 button{
+    background-color: #949B95;
+}
+.Number2
+{
+  background-color: #005221; 
+  border-radius: 8px;
+}
+.Number2 button{
+    background-color: #005221;
+}
+.Number1
+{
+  background-color: #9a1115; 
+  border-radius: 8px; 
+}
+.Number1 button{
+    background-color: #9a1115;
 }
