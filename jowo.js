@@ -1,7 +1,10 @@
 function reveal(button, divClass,num) {
-    button.style.display = 'none';
     var div = document.querySelector('.' + divClass);
     div.style.display = 'block';
+    setTimeout(function() {
+        button.style.opacity = '0';
+    }, 100);
+    button.style.display = 'none';
     setTimeout(function() {
         div.style.opacity = '1';
     }, 100);
@@ -17,5 +20,4 @@ function reveal(button, divClass,num) {
         var nextbutton = document.querySelector('.closing');
         nextbutton.style.display='block';
     }
-
 }

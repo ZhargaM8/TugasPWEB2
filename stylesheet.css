@@ -1,8 +1,3 @@
-@keyframes fadein {
-  from{opacity: 0;}
-  to{opacity: 1;}
-}
-
 .revbut3 {
   display: flex;
   justify-content: center;
@@ -11,7 +6,15 @@
 .revbut3 button{
   background-color: black;
   border-color: white;
+  opacity: 1;
   width: 100%;
+  transition: opacity 2s;
+  transition:all 0.3s,transform 0.3s ease-out;
+}
+.revbut3 button:hover{
+  transform: translateY(-10px);
+  background-color: white;
+  color:black;
 }
 .revbut2 {
   display: none;
@@ -22,6 +25,13 @@
   background-color: black;
   border-color: white;
   width: 100%;
+  transition: opacity 2s;
+  transition:all 0.3s,transform 0.3s ease-out;
+}
+.revbut2 button:hover{
+  transform: translateY(-10px);
+  background-color: white;
+  color:black;
 }
 .revbut1 {
   display: none;
@@ -32,6 +42,13 @@
   background-color: black;
   border-color: white;
   width: 100%;
+  transition: opacity 2s;
+  transition:all 0.3s,transform 0.3s ease-out;
+}
+.revbut1 button:hover{
+  transform: translateY(-10px);
+  background-color: white;
+  color:black;
 }
 
 body{
@@ -69,7 +86,7 @@ margin: 10px;
 }
 button{
   float: right;
-  border: 2px solid black;
+  border: 2px solid white;
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -94,6 +111,12 @@ button{
     position: absolute;
     bottom: 0;
     right: 0;
+    transition:all 0.3s,transform 0.3s ease-out;
+}
+.Number3 button:hover{
+  transform: translateY(-10px);
+  background-color: white;
+  color:black;
 }
 .Number2
 {
@@ -109,6 +132,11 @@ button{
     position: absolute;
     bottom: 0;
     right: 0;
+    transition:all 0.3s,transform 0.3s ease-out;
+}
+.Number2 button:hover{
+  transform: translateY(-10px);
+  background-color: #00b849;
 }
 .Number1
 {
@@ -124,4 +152,9 @@ button{
     position: absolute;
     bottom: 0;
     right: 0;
+    transition:all 0.3s,transform 0.3s ease-out;
+}
+.Number1 button:hover{
+  transform: translateY(-10px);
+  background-color: #d1161c;
 }
